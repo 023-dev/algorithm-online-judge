@@ -1,51 +1,45 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
+import java.io.*;
 
 public class Main {
-
-	static class Meeting implements Comparable<Meeting>{
-		int start;
-		int end;
-		
-		public Meeting(int start, int end) {
-			this.start =start;
-			this.end = end;
-		}
-
-		@Override
-		public int compareTo(Meeting o) {
-			if(this.end>o.end) return 1;
-			else if(this.end<o.end) return -1;
-			else return this.start-o.start;
-		}
-	}
-	public static void main(String[] args) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
-		
-		List<Meeting> list = new ArrayList<>();
-		StringTokenizer st = null;
-		for(int i=0; i<n; i++) {
-			st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			list.add(new Meeting(a,b));
-		}
-		
-		Collections.sort(list);
-		
-		int endTime=0, cnt=0;
-		for(Meeting m : list) {
-			if(endTime<=m.start) {
-				endTime = m.end;
-				cnt++;
-			}
-		}
-		System.out.println(cnt);
-	}
+    static class Meet {
+        int start;
+        int end;
+        
+        public Meet(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+    }
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        int N = Integer.parseInt(br.readLine());
+        Meet[] meets = new Meet[N];
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            int start = Integer.parseInt(st.nextToken());
+            int end = Integer.parseInt(st.nextToken());
+            meets[i] = new Meet(start, end);
+        }
+        
+        Arrays.sort(meets, (o1, o2) -> {
+            if(o1.end == o2.end) {return o1.start - o2.start;}
+            return o1.end - o2.end;
+        });
+        
+        int count = 0;
+        int prev = 0;
+        for (Meet meet : meets) {
+            int start = meet.start;
+            int end = meet.end;
+            if (start >= prev) {
+                count++;
+                prev = end;
+            }
+        }
+        
+        System.out.println(count);
+    }
 }
