@@ -4,20 +4,18 @@ class Solution {
     boolean solution(String s) {
         boolean answer = true;
         
-        int opened = 0;
-        for(String str : s.split("")) {
-            if (str.equals("(")) {
-                opened++;
-            } else {
-                if (opened == 0) {
+        int is_opened = 0;
+        for (String str : s.split("")) {
+            if (str.equals("(")) is_opened++;
+            else {
+                if (is_opened == 0) {
                     answer = false;
                     break;
                 }
-                opened--;
-            }
-            
+                is_opened--;  
+            } 
         }
-        if (opened != 0) return false;
+        if (is_opened != 0) return false;
         return answer;
     }
 }
