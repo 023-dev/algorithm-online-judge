@@ -5,20 +5,19 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int x = Integer.parseInt(br.readLine());
-        
-        int[] dp = new int[x+1];
-        dp[1] = 0;
+       
+        int[] memo = new int[x+1];
+        memo[1] = 0;
         
         for (int i = 2; i <= x; i++) {
-            dp[i] = dp[i-1] + 1;
-            if (i % 2 == 0) {
-               dp[i] = Math.min(dp[i], dp[i/2]+1);
+            memo[i] = memo[i-1] + 1;
+            if(i % 2 == 0) {
+                memo[i] = Math.min(memo[i], memo[i/2] + 1);
             }
-            if (i % 3 == 0) {
-                dp[i] = Math.min(dp[i], dp[i/3]+1);
+            if(i % 3 == 0) {
+                memo[i] = Math.min(memo[i], memo[i/3] + 1);
             }
         }
-        
-        System.out.println(dp[x]);
+        System.out.println(memo[x]);
     }
 }
