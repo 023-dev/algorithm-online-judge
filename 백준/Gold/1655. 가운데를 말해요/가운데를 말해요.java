@@ -12,13 +12,13 @@ public class Main {
         while (n --> 0) {
             int num = Integer.parseInt(br.readLine());
 
-            if (maxHeap.size() == minHeap.size()) {
+            if (minHeap.size() == maxHeap.size()) {
                 maxHeap.add(num);
             } else {
                 minHeap.add(num);
             }
             
-            if (!maxHeap.isEmpty() && !minHeap.isEmpty()) {
+            if (!minHeap.isEmpty()) {
                 if (maxHeap.peek() > minHeap.peek()) {
                     int temp = maxHeap.poll();
                     maxHeap.add(minHeap.poll());
