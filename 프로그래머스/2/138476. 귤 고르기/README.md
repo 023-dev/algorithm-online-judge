@@ -1,10 +1,10 @@
 # [level 2] 귤 고르기 - 138476 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/138476) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/138476?language=java) 
 
 ### 성능 요약
 
-메모리: 21.2 MB, 시간: 29.17 ms
+메모리: 108 MB, 시간: 50.18 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 12일 21:47:41
+2026년 03월 11일 23:02:59
 
 ### 문제 설명
 
@@ -46,7 +46,7 @@
 </tr>
 </thead>
         <tbody><tr>
-<td data-sider-select-id="d41e8a68-1872-42d2-a838-3469644ffff3">6</td>
+<td>6</td>
 <td>[1, 3, 2, 5, 4, 5, 2, 3]</td>
 <td>3</td>
 </tr>
@@ -81,7 +81,7 @@
 <p><strong>입출력 예 #3</strong></p>
 
 <ul>
-<li data-sider-select-id="dca962a9-c301-4ee0-9a59-8e6c4945e44e">경화는 크기가 1인 귤 2개를 판매하거나 2인 귤 2개를 판매할 수 있습니다. 이때의 크기 종류는 1가지로, 이 값이 최소가 됩니다.</li>
+<li>경화는 크기가 1인 귤 2개를 판매하거나 2인 귤 2개를 판매할 수 있습니다. 이때의 크기 종류는 1가지로, 이 값이 최소가 됩니다.</li>
 </ul>
 
 
