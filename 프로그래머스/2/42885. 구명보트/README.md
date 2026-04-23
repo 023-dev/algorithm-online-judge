@@ -1,10 +1,10 @@
 # [level 2] 구명보트 - 42885 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42885) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42885?language=java) 
 
 ### 성능 요약
 
-메모리: 10.5 MB, 시간: 7.10 ms
+메모리: 74.2 MB, 시간: 12.33 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 12일 16:52:52
+2026년 04월 23일 22:02:53
 
 ### 문제 설명
 
@@ -51,7 +51,7 @@
 <td>3</td>
 </tr>
 <tr>
-<td data-sider-select-id="d96703dc-cf74-4ff9-8888-79715f2981c2">[70, 80, 50]</td>
+<td>[70, 80, 50]</td>
 <td>100</td>
 <td>3</td>
 </tr>
