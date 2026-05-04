@@ -1,10 +1,10 @@
 # [level 2] 카펫 - 42842 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42842) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=java) 
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.01 ms
+메모리: 84.8 MB, 시간: 0.08 ms
 
 ### 구분
 
@@ -16,23 +16,23 @@
 
 ### 제출 일자
 
-2024년 05월 02일 09:42:40
+2026년 05월 04일 18:36:23
 
 ### 문제 설명
 
-<p data-sider-select-id="847a144d-9813-4fcc-aa6b-6c8ed63dbd7f">Leo는 카펫을 사러 갔다가 아래 그림과 같이 중앙에는 노란색으로 칠해져 있고 테두리 1줄은 갈색으로 칠해져 있는 격자 모양 카펫을 봤습니다.</p>
+<p>Leo는 카펫을 사러 갔다가 아래 그림과 같이 중앙에는 노란색으로 칠해져 있고 테두리 1줄은 갈색으로 칠해져 있는 격자 모양 카펫을 봤습니다.</p>
 
 <p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/b1ebb809-f333-4df2-bc81-02682900dc2d/carpet.png" title="" alt="carpet.png"></p>
 
-<p data-sider-select-id="4ec56f21-a677-4e3a-a84a-2958cc0b0a78">Leo는 집으로 돌아와서 아까 본 카펫의 노란색과 갈색으로 색칠된 격자의 개수는 기억했지만, 전체 카펫의 크기는 기억하지 못했습니다.</p>
+<p>Leo는 집으로 돌아와서 아까 본 카펫의 노란색과 갈색으로 색칠된 격자의 개수는 기억했지만, 전체 카펫의 크기는 기억하지 못했습니다.</p>
 
-<p data-sider-select-id="029c15e1-e35b-4a34-9b41-80a3de49f7a7">Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yellow가 매개변수로 주어질 때 카펫의 가로, 세로 크기를 순서대로 배열에 담아 return 하도록 solution 함수를 작성해주세요.</p>
+<p>Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yellow가 매개변수로 주어질 때 카펫의 가로, 세로 크기를 순서대로 배열에 담아 return 하도록 solution 함수를 작성해주세요.</p>
 
 <h5>제한사항</h5>
 
 <ul>
 <li>갈색 격자의 수 brown은 8 이상 5,000 이하인 자연수입니다.</li>
-<li data-sider-select-id="08a87d0c-315e-4107-a7a0-67c5afa99366">노란색 격자의 수 yellow는 1 이상 2,000,000 이하인 자연수입니다.</li>
+<li>노란색 격자의 수 yellow는 1 이상 2,000,000 이하인 자연수입니다.</li>
 <li>카펫의 가로 길이는 세로 길이와 같거나, 세로 길이보다 깁니다.</li>
 </ul>
 
